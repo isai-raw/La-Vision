@@ -1,0 +1,112 @@
+/* Variables */
+:root {
+  --white: #ffffff;
+  --background: #252b46;
+  --color-principal: #1c4077;
+}
+/*Resetear estilos que el navegador trae por defecto*/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+/*Fuentes Base*/
+html {
+  font-size: 62.5%;
+  font-family: "Open Sans", sans-serif;
+}
+body {
+  color: var(--white);
+  font-family: "Open Sans", sans-serif;
+}
+header {
+  display: flex;
+  width: 100%;
+  background-color: var(--white);
+}
+header picture {
+  margin-left: 20px;
+  width: 70%;
+  height: auto;
+}
+header picture img {
+  width: 100%;
+  height: auto;
+}
+.header__menu {
+  position: fixed;
+  right: 5%;
+  top: 3%;
+  width: 15%;
+  height: auto;
+  margin: 0 auto;
+  background-color: var(--background);
+  box-shadow: 0 4px 12px rgba(94, 93, 91, 0.781);
+  border-radius: 8px;
+}
+.header__menu img {
+  width: 100%;
+  padding: 3px 3px;
+}
+main {
+  padding: 20px;
+  background-color: var(--background);
+  height: 500px;
+}
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.cards__article {
+  position: relative;
+  width: 100%;
+  height: auto;
+  margin: 0px auto;
+  padding: 5px;
+  box-shadow: 0 4px 12px rgba(66, 68, 94, 0.781);
+  background-color: var(--color-principal);
+}
+.cards__article h3 {
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 2.2rem;
+  text-align: center;
+  margin: 0px 0px 10px 0px;
+}
+.cards__article--container {
+  display: flex;
+  width: 100%;
+}
+.cards__article--container picture {
+  width: 40%;
+  margin: 5px;
+}
+.cards__article--container img {
+  width: 100%;
+}
+.cards__article--container p {
+  font-size: 1.6rem;
+  line-height: 1.8rem;
+  margin: 5px;
+  width: 60%;
+}
+.boton {
+  display: block;
+  width: 70px;
+  height: 30px;
+  margin: 0 auto;
+  background-color: var(--background);
+  border: solid var(--white);
+  border-radius: 5px;
+}
+.boton a {
+  width: 100%;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.8rem;
+  font-weight: 700;
+  text-align: center;
+  line-height: 2rem;
+  color: var(--white);
+  text-decoration: none;
+}
