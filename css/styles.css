@@ -48,6 +48,7 @@ header picture img {
   font-weight: 300;
 }
 .header__menu {
+  display: block;
   position: fixed;
   right: 5px;
   top: 7px;
