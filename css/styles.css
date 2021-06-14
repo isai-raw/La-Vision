@@ -50,6 +50,7 @@ header picture img {
 .header__menu {
   display: block;
   position: fixed;
+  z-index: 1;
   right: 5px;
   top: 7px;
   width: 50px;
