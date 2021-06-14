@@ -67,17 +67,26 @@ main {
   background-color: var(--background);
   height: auto;
 }
+.intro--titles {
+  margin: 20px auto;
+  font-family: "Open Sans", sans-serif;
+  font-size: 2rem;
+  font-weight: 500;
+  line-height: 2.2rem;
+  text-align: center;
+}
 .cards {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
 }
+
 .cards__article {
   position: relative;
   min-width: 281px;
   max-width: 510px;
   height: auto;
-  margin: 020px auto;
+  margin: 20px auto;
   padding: 5px;
   box-shadow: 0 4px 12px rgba(26, 25, 25, 0.781);
   background-color: var(--color-principal);
@@ -108,16 +117,98 @@ main {
   width: 40%;
   margin: 5px 10px 10px 10px;
 }
+a {
+  display: contents;
+}
 .boton {
   width: 70px;
   height: 50px;
   margin: 20px auto;
   background-color: var(--background);
-  border: solid 2px var(--white);
-  border-radius: 5px;
+  box-shadow: 0 4px 12px rgba(26, 25, 25, 0.781);
   overflow: hidden;
   background-image: url("../assets/icon-flecha-rigth.svg");
   background-size: 90%;
   background-position: center;
   background-repeat: no-repeat;
+}
+.boton:hover {
+  background-color: #27346e;
+}
+.locacion {
+  width: 100%;
+}
+.locacion__card {
+  display: flex;
+  flex-wrap: wrap;
+  width: fit-content;
+  padding: 20px;
+  justify-content: center;
+  margin: 0 auto;
+  box-shadow: 0 4px 12px rgba(26, 25, 25, 0.781);
+}
+.locacion__direccion {
+  max-width: 400px;
+  margin-top: 20px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 2rem;
+}
+@keyframes callus {
+  0% {
+    color: var(--white);
+  }
+  50% {
+    color: #002efc;
+  }
+}
+.locacion__direccion a {
+  color: white;
+  text-decoration: none;
+  animation-name: callus;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+.locacion__card img {
+  width: 100%;
+  margin: 20px 0px 20px 0px;
+}
+footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 50px;
+  background-color: #2e286e;
+}
+.left {
+  width: 50%;
+}
+.rigth {
+  width: 50%;
+  margin: 0 auto;
+}
+footer p {
+  font-size: 1.8rem;
+  text-align: center;
+}
+footer p span {
+  font-weight: 300;
+}
+footer .menu-list {
+  font-size: 1.6rem;
+}
+.menu-list li {
+  display: inline-block;
+  list-style: none;
+  margin: 0px 15px;
+  text-align: center;
+}
+.menu-list a {
+  font-family: "Open Sans";
+  color: var(--white);
+  text-decoration: none;
 }
