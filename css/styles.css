@@ -2,7 +2,7 @@
 :root {
   --white: #ffffff;
   --background: #252b46;
-  --color-principal: #2a18e736;
+  --color-principal: #1e1a4736;
 }
 /*Resetear estilos que el navegador trae por defecto*/
 * {
@@ -150,7 +150,6 @@ main {
   margin: 20px auto;
   padding: 5px;
   box-shadow: 0 4px 12px rgba(26, 25, 25, 0.781);
-  background-color: var(--color-principal);
 }
 .cards__article--img {
   position: absolute;
@@ -172,7 +171,7 @@ main {
 .cards__article--container p {
   font-size: 1.6rem;
   font-weight: 500;
-  line-height: 1.8rem;
+  line-height: 2rem;
 }
 .cards__article--container img {
   width: 40%;
