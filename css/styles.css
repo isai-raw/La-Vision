@@ -61,7 +61,7 @@ header ul li a {
   text-decoration: none;
   color: var(--background);
 }
-.header__menu {
+.checkbtn {
   display: none;
   position: fixed;
   z-index: 1;
@@ -70,17 +70,25 @@ header ul li a {
   width: 50px;
   height: auto;
   margin: 0 auto;
+  padding-top: 4px;
+  padding-left: 4px;
   background-color: var(--background);
   box-shadow: 0 4px 12px rgb(0, 0, 0);
   border-radius: 8px;
+  cursor: pointer;
 }
-.header__menu img {
-  width: 100%;
-  padding: 3px 3px;
+.checkbtn img {
+  width: 90%;
+}
+#check {
+  display: none;
 }
 @media (max-width: 850px) {
-  .header__menu {
+  .checkbtn {
     display: block;
+    width: 50px;
+    height: 50px;
+    z-index: 2;
   }
   header ul {
     position: fixed;
@@ -89,6 +97,7 @@ header ul li a {
     z-index: 1;
     background: #252b46b2;
     backdrop-filter: blur(2px);
+    /* top: 72px; */
     left: -100%;
     text-align: center;
     transition: all 0.5s;
@@ -100,8 +109,18 @@ header ul li a {
   header ul li {
     display: block;
   }
-  .header__menu:active ~ ul {
+  #check:checked ~ ul {
     left: 0;
+  }
+  #check:checked ~ .checkbtn {
+    background: url("../assets/equis.png");
+    background-size: 90%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: var(--background);
+  }
+  #check:checked ~ .checkbtn img {
+    display: none;
   }
 }
 main {
