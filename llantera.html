@@ -16,7 +16,7 @@
     <a href="index.html">
       <div class="header__logo">
         <picture>
-          <img src="./assets/logo-lavision.png" alt="La Vision">
+          <img src="./assets/fotos/logo-lavision.png" alt="La Vision">
         </picture>
     </a>
     <div class="header__titulo">
@@ -24,24 +24,23 @@
       <h2>Vidreria y Llantera</h2>
     </div>
     </div>
-
+  
     <input type="checkbox" id="check">
     <label for="check" class="checkbtn">
-      <img src="./assets/menu-real.svg" alt="menu">
+      <img src="./assets/fotos/menu-real.svg" alt="menu">
     </label>
-
+  
     <ul class="menu-responsive">
       <li><a href="index.html">Inicio</a></li>
-      <li><a href="#">Vidreria</a></li>
-      <li><a href="#">Llantera</a></li>
+      <li><a href="vidreria.html">Vidreria</a></li>
+      <li><a href="llantera.html">Llantera</a></li>
       <li><a href="#">¿Quienes somos?</a></li>
     </ul>
-
   </header>
   <main class="main__llantera">
     <!-- video -->
     <div class="video">
-      <video src="./assets/horizontal-2.mp4" loop autoplay preload="auto"></video>
+      <video src="./assets/videos/horizontal-2.mp4" loop autoplay preload="auto"></video>
       <div class="encabezado">
         <h2>Llantera La Vision</h2>
         <p>Aqui tus trabajos son mas rapidos y seguros</p>
@@ -50,7 +49,10 @@
     <!-- video 2 -->
     <div class="container-video2">
       <div class="video2">
-        <video src="./assets/llantera-vertical.mp4" loop autoplay preload="auto"></video>
+        <video loop autoplay preload="auto">
+          <source media="(min-width:670px)" src="./assets/videos/llantera-cuadrado.mp4">
+          <source src="./assets/videos/llantera-vertical.mp4">
+        </video>
       </div>
       <div class="shadow first">
         <p>Contamos con las herramientas y el equipo necesario para brindarte los mejores servicios de: <br><span>Cambio de Llantas <br>
@@ -74,7 +76,7 @@
     </div>
     <!-- Video 3 -->
     <div class="video">
-      <video src="./assets/llantera-horizontal.mp4" loop autoplay preload="auto"></video>
+      <video src="./assets/videos/llantera-horizontal.mp4" loop autoplay preload="auto"></video>
       <div class="encabezado">
         <p>Ven, nuestro personal capacitado te atendera felizmente.</p>
       </div>
@@ -87,8 +89,8 @@
     <div class="rigth">
       <ul class="menu-list">
         <li><a href="index.html">Inicio</a></li>
-        <li><a href="#">Vidreria</a></li>
-        <li><a href="#">Llantera</a></li>
+        <li><a href="vidreria.html">Vidreria</a></li>
+        <li><a href="llantera.html">Llantera</a></li>
         <li><a href="#">¿Quienes somos?</a></li>
       </ul>
     </div>
