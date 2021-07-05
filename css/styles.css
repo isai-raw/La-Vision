@@ -422,6 +422,8 @@ a {
   gap: 10px;
   padding: 10px;
   justify-content: center;
+  max-width: 1400px;
+  justify-self: center;
 }
 .vidreria__cards-container article {
   grid-column: span 2;
