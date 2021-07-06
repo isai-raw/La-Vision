@@ -12,6 +12,11 @@
 </head>
 
 <body>
+  <!-- loader -->
+  <div id="contenedor_carga">
+    <div id="carga"></div>
+  </div>
+
   <header>
     <a href="index.html">
       <div class="header__logo">
@@ -114,6 +119,14 @@
       </ul>
     </div>
   </footer>
+
+  <script>
+    window.onload = function () {
+      var contenedor = document.getElementById('contenedor_carga');
+      contenedor.style.visibility = 'hidden';
+      contenedor.style.opacity = '0';
+    }
+  </script>
 </body>
 
 </html>
